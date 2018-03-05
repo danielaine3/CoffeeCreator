@@ -18,5 +18,4 @@ var coffee = {
 		});
 	}
 };
-
 module.exports = coffee;

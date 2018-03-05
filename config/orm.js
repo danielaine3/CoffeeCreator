@@ -1,4 +1,4 @@
-var connection = require ("./connection.js");
+var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
 	var arr = [];
@@ -16,7 +16,7 @@ function printQuestionMarks(num) {
 
  		if(Object.hasOwnProperty.call(ob, key)) {
  			if (typeof value === "string" && value.indexOf(" ") >= 0) {
- 				value = " " + value + "'";
+ 				value = "'" + value + "'";
  			}
  			arr.push(key + "=" + value);
  		}
@@ -27,7 +27,6 @@ function printQuestionMarks(num) {
 var orm = {
 	all: function(tableInput, cb) {
 		var queryString = "SELECT * FROM " + tableInput + ";";
-
 		connection.query(queryString, function(err, result) {
 			if (err) {
 				throw err;
@@ -51,7 +50,6 @@ var orm = {
 			if (err) {
 				throw err;
 			}
-
 			cb(result);
 		});
 	},
@@ -68,11 +66,9 @@ var orm = {
 			if (err) {
 				throw err;
 			}
-
 			cb(result);
 		});
 	}
-
-}
+};
 
 module.exports = orm;

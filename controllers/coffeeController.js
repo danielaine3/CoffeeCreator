@@ -1,5 +1,4 @@
 var express = require("express");
-
 var router = express.Router();
 
 // Import the model  to use its database functions.
@@ -7,11 +6,11 @@ var coffee = require("../models/coffee.js");
 
 router.get("/", function(req, res) {
 	coffee.all(function(data) {
-		varhbsObject = {
+		var hbsObject = {
 			coffee: data
 		};
 		console.log(hbsObject);
-		res.render("index", hsbObject);
+		res.render("index", hbsObject);
 	});
 });
 
@@ -21,7 +20,7 @@ router.post("/api/cats", function(req, res) {
 	], [
 		req.body.name, req.body.drank
 	], function(result) {
-		res.json({ id: result.insertId})
+		res.json({ id: result.insertId })
 	});
 });
 
