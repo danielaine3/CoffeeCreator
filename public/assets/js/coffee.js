@@ -1,5 +1,5 @@
 $(function() {
-	$(".change-drank").on("click", function(event) {
+	$(".add-coffee").on("click", function(event) {
 		var id = $(this).data("id");
 		var newDrank = $(this).data("newdrank");
 

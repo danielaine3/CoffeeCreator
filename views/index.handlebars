@@ -1,6 +1,6 @@
 <h1>Coffee Creator!</h1>
 
-<h2>Coffee that has not been drank</h2>
+<h2>Coffee ready to drink!</h2>
 
 <ul>
 	{{#each coffee}}
@@ -10,12 +10,12 @@
 	{{/each}}
 </ul>
 
-<h2>Coffee that has been drank</h2>
+<h2>Coffee that's already gone.</h2>
 
 <ul>
 	{{#each coffee}}
 		{{#if drank}}
-			{{coffee/coffee-block drank=false}}
+			{{ coffee/coffee-block drank=false}}
 		{{/if}}
 	{{/each}} 
 </ul>
@@ -23,14 +23,8 @@
 <h2>Add a Coffee</h2>
 <form class= "create-form">
 	<div class= "form-group">
-		<label for ="co">Coffee Type:</label>
+		<label for ="co">Coffee Drink:</label>
 		<input type ="text" id ="co" name="name">
 	</div>
-	<div class= "form-group">
-		<label for="drank"> Drank?<label><br>
-		<input type="radio" name="drank" value="1" checked> DRANK!<br>
-		<input type="radio" name="drank" value="0"> Available!
-	</div>
-
-	<button type="submit">Add coffee!</button>
+	<button type="submit" class="add-coffee">Add coffee!</button>
 </form>
