@@ -6,7 +6,7 @@ $(function() {
 			name: $("#co").val().trim()
 			// drank: $("[name=drank]:checked").val().trim()
 		};
-
+		console.log("made it here.")
 		$.ajax("/api/coffee", {
 			type:"POST",
 			data:newCoffee
