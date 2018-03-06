@@ -1,4 +1,3 @@
-INSERT INTO coffee (coffee_name, drank)
-VALUES ("Flat White", 0), 
-("Mocha", 0), 
-("Dirty Chai", 0)
+INSERT INTO coffee (name, drank) VALUES ("Flat White", false);
+INSERT INTO coffee (name, drank) VALUES ("Mocha", false);
+INSERT INTO coffee (name, drank) VALUES ("Dirty Chai", false);

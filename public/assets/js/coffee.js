@@ -1,18 +1,18 @@
 $(function() {
-	$(".add-coffee").on("click", function(event) {
+	$(".drank").on("click", function(event) {
 		var id = $(this).data("id");
-		var newDrank = $(this).data("newdrank");
+		var newCoffee = $(this).data("newcoffee");
 
-		var newDrankState = {
-			dranks: newDrank
+		var newCoffeeState = {
+			drank: newCoffee
 		};
 
-		$.ajax("/api/coffee/" +id, {
+		$.ajax("/api/coffee/" + id, {
 			type:"PUT",
-			data: newDrankState
+			data: newCoffeeState
 		}).then(
 			function() {
-				console.log("changed drank to", newDrank);
+				console.log("changed drank to", newCoffee);
 				location.reload();
 			}
 		);
@@ -20,14 +20,13 @@ $(function() {
 	$(".create-form").on("submit", function(event) {
 		event.preventDefault();
 
-		var newDrank = {
-			name: $("#co").vale().trim(),
-			drank: $("[name=drank]:checked").val().trim()
+		var newCoffee = {
+			name: $("#co").val().trim()
 		};
 
-		$.ajax("/api/cats", {
+		$.ajax("/api/coffee", {
 			type:"POST",
-			data:newDrank
+			data:newCoffee
 		}).then(
 			function() {
 				console.log("created new coffee");
