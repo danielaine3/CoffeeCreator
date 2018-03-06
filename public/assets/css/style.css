@@ -1,3 +1,58 @@
+body {
+	background-color: #D5C5B1;
+}
+
+h1 {
+	font-size: 80px;
+	color:#8BEDEE;
+	background-color: #401D11;
+/*	text-shadow:
+		-2px 0 #401D11,
+		0 2px #401D11,
+		2px 0 #401D11,
+		0 -2px #401D11;*/
+	text-align: center;
+}
+
+h2 {
+	font-size: 40px;
+	color:#9D5A3F;
+	text-align: center;
+}
+
+h3 {
+	font-size: 20px;
+	color:#401D11;
+	text-align: center;
+}
+
+.add-coffee {
+	font-size: 20px;
+	color:#401D11;
+	text-align: center;
+}
+
+#co {
+	width:300px;
+	height:60px;
+}
+
+#submit {
+	padding:10px;
+}
+
+.ready {
+	margin-left: 300px;
+	float:left;
+	align-content: center;
+}
+
+.gone {
+	margin-right: 300px;
+	float:right;
+	align-content: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
