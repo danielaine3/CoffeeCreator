@@ -1,10 +1,11 @@
 var express = require("express");
+
 var router = express.Router();
 
 // Import the model  to use its database functions.
 var coffee = require("../models/coffee.js");
 
-router.get("/", function(req, res) {
+router.get('/', function(req, res) {
 	coffee.all(function(data) {
 		var hbsObject = {
 			coffee: data
@@ -14,13 +15,13 @@ router.get("/", function(req, res) {
 	});
 });
 
-router.post("/api/cats", function(req, res) {
+router.post("/api/coffee", function(req, res) {
 	coffee.create([
-		"name", "drank"
+		"name"
 	], [
-		req.body.name, req.body.drank
+		req.body.name
 	], function(result) {
-		res.json({ id: result.insertId })
+		res.json({ id: result.insertId });
 	});
 });
 
