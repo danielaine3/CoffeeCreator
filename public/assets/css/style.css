@@ -6,18 +6,15 @@ h1 {
 	font-size: 80px;
 	color:#8BEDEE;
 	background-color: #401D11;
-/*	text-shadow:
-		-2px 0 #401D11,
-		0 2px #401D11,
-		2px 0 #401D11,
-		0 -2px #401D11;*/
 	text-align: center;
+	padding: 20px;
 }
 
 h2 {
 	font-size: 40px;
 	color:#9D5A3F;
 	text-align: center;
+	margin: 20px 0 20px 0;
 }
 
 h3 {
@@ -38,7 +35,11 @@ h3 {
 }
 
 #submit {
+	color:#401D11;
+	background-color: #8BEDEE;
 	padding:10px;
+	font-size: 20px;
+	border-color: #401D11;
 }
 
 .ready {
