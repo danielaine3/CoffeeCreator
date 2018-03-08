@@ -1,45 +1,67 @@
 body {
 	background-color: #D5C5B1;
+	font-family: 'Pragati Narrow', sans-serif;
+	font-size: 22px;
 }
 
 h1 {
+	font-family: 'Bowlby One SC', cursive;
 	font-size: 80px;
 	color:#8BEDEE;
 	background-color: #401D11;
 	text-align: center;
 	padding: 20px;
+		text-shadow:
+		-3px -3px 0 #9D5A3F,
+		3px -3px 0 #9D5A3F,
+		-3px 3px 0 #9D5A3F,
+		3px 3px 0 #9D5A3F;
 }
 
 h2 {
 	font-size: 40px;
+	font-weight: bold;
 	color:#9D5A3F;
 	text-align: center;
 	margin: 20px 0 20px 0;
 }
 
+input {
+	margin: 5px;
+}
+
 h3 {
-	font-size: 20px;
+	font-size: 25px;
 	color:#401D11;
 	text-align: center;
 }
 
-.add-coffee {
+#add-coffee {
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+form {
 	font-size: 20px;
 	color:#401D11;
 	text-align: center;
 }
 
 #co {
-	width:300px;
-	height:60px;
+	width:400px;
+	height:80px;
+	color:#9D5A3F;
+	font-size:22px;
 }
 
 #submit {
+	font-family: 'Bowlby One SC', cursive;
 	color:#401D11;
 	background-color: #8BEDEE;
 	padding:10px;
 	font-size: 20px;
 	border-color: #401D11;
+	margin-top: 5px;
 }
 
 .ready {
@@ -48,28 +70,24 @@ h3 {
 	align-content: center;
 }
 
+#readytitle, #gonetitle {
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+
 .gone {
 	margin-right: 300px;
 	float:right;
 	align-content: center;
 }
 
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+.drink {
+	color:#8BEDEE;
+	background-color: #9D5A3F;
+	padding:3px;
+	font-size: 13px;
+	border-color: #401D11;
+	margin: 5px;
 }
 
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
 
