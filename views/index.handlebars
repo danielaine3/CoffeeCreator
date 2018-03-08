@@ -1,7 +1,10 @@
 <h1>Coffee Creator!</h1>
 <h2> Create a coffee... Then drink It!</h2>
-<img src="/assets/img/coffee.png">
-
+<div id="img-holder">
+	<img src="/assets/img/coffee.png">
+	<img src="/assets/img/coffee1.png">
+	<img src="/assets/img/coffee2.png">
+</div>
 <form class="add-coffee">
 	<div class= "form-group">
 
@@ -11,7 +14,7 @@
 </form>
 
 <div class="ready">
-	<h3 id="readytitle">Coffee ready to drink!</h3>
+	<h3 id="readytitle">ORDER UP!</h3>
 	<ul>
 		{{#each coffee}}
 			{{#unless drank}}
@@ -21,7 +24,7 @@
 	</ul>
 </div>
 <div class="gone">
-	<h3 id="gonetitle">Coffee that's already gone.</h3>
+	<h3 id="gonetitle">REFILLS!</h3>
 	<ul>
 		{{#each coffee}}
 			{{#if drank}}
