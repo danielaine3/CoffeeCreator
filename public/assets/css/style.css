@@ -26,6 +26,13 @@ h2 {
 	margin: 20px 0 20px 0;
 }
 
+img {
+	width: 100px;
+	height: 192px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 input {
 	margin: 5px;
 }
@@ -34,11 +41,6 @@ h3 {
 	font-size: 25px;
 	color:#401D11;
 	text-align: center;
-}
-
-#add-coffee {
-	text-decoration: underline;
-	margin-bottom: 5px;
 }
 
 form {
@@ -90,4 +92,7 @@ form {
 	margin: 5px;
 }
 
-
+li {
+	color: #9D5A3F;
+	font-size:22px;
+}
