@@ -21,7 +21,7 @@ router.post("/api/coffee", function(req, res) {
 	coffee.create([
 		"name", "drank"
 	], [
-		req.body.name, false
+		data.id, req.body.name, false
 	], function(result) {
 		res.json({ id: result.insertId });
 	});

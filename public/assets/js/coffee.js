@@ -8,7 +8,7 @@ $(function() {
 		console.log("made it here.")
 		$.ajax("/api/coffee", {
 			type:"POST",
-			data:newCoffee
+			data: newCoffee
 		}).then(
 			function() {
 				console.log("created new coffee");
