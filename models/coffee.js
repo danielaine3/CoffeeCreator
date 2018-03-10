@@ -16,11 +16,11 @@ var coffee = {
 		orm.update("coffee", objColVals, condition, function(res) {
 			cb(res);
 		});
+	},
+	delete: function(condition, cb) {
+		orm.delete("coffee", condition, function(res) {
+			cb(res);
+		});
 	}
-	// delete: function(condition, cb) {
-	// 	orm.delete("coffee", condition, function(res) {
-	// 		cb(res);
-	// 	});
-	// }
 };
 module.exports = coffee;
