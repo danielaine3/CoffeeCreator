@@ -95,12 +95,13 @@ form {
 }
 
 .delete-coffee {
-		color:#401D11;
+	color:#401D11;
 	background-color:#D6E5F7;
 	padding:3px;
 	font-size: 13px;
 	border-color: #401D11;
 	margin: 5px;
+
 }
 
 li {
