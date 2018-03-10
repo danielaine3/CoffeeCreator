@@ -34,4 +34,16 @@ $(function() {
 			}
 		);
 	});
+
+	$(".delete-coffee").on("click", function(event) {
+		var id = $(this).data("id");
+
+		$.ajax("/api/coffee/" + id, {
+		}).then(
+			function() {
+			console.log("deleted coffee". + id);
+			location.reload();
+			}
+		);
+	});
 });
