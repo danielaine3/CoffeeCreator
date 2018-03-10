@@ -39,9 +39,10 @@ $(function() {
 		var id = $(this).data("id");
 
 		$.ajax("/api/coffee/" + id, {
+			type: "DELETE",
 		}).then(
 			function() {
-			console.log("deleted coffee". + id);
+			console.log("deleted coffee" + id);
 			location.reload();
 			}
 		);
