@@ -94,6 +94,15 @@ form {
 	margin: 5px;
 }
 
+.delete-coffee {
+		color:#401D11;
+	background-color:#D6E5F7;
+	padding:3px;
+	font-size: 13px;
+	border-color: #401D11;
+	margin: 5px;
+}
+
 li {
 	color: #9D5A3F;
 	font-size:22px;
