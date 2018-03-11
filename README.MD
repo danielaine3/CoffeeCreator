@@ -2,7 +2,7 @@
 Create a coffee... Then drink it!
 ## 1. Create your coffee
 Use the input field to enter a coffee drink, then click the add coffe button to have it listed under ORDER UP!
-![Alt Text](https://user-images.githubusercontent.com/30851569/37249391-01048e48-24ac-11e8-9ef6-f1036d921125.gif)
+![Alt Text](github.com/danielaine3/CoffeeCreator/blob/master/public/assets/img/CreateCoffee.mov)
 
 ## 2. Drink up, then refill
 Drink your coffee to have it move to the REFILL! list. Then click Refill button to move it back under ORDER UP!
