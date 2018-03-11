@@ -32,7 +32,6 @@ $(function() {
 	});
 	$(".delete-coffee").on("click", function(event) {
 		var id = $(this).data("id");
-
 		$.ajax("/api/coffee/" + id, {
 			type: "DELETE",
 		}).then(

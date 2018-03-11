@@ -2,7 +2,7 @@ var express = require("express");
 // Import the model  to use its database functions.
 var coffee = require("../models/coffee.js");
 var router = express.Router();
-router.get('/', function(req, res) {
+router.get("/", function(req, res) {
 	coffee.all(function(data) {
 		var hbsObject = {
 			coffee: data
@@ -15,7 +15,7 @@ router.post("/api/coffee", function(req, res) {
 	coffee.create([
 		"name", "drank"
 	], [
-		data.id, req.body.name, false
+		req.body.name, false
 	], function(result) {
 		res.json({ id: result.insertId });
 	});
