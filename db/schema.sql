@@ -9,4 +9,3 @@ drank BOOLEAN NOT NULL,
 PRIMARY KEY (id)
 );
 
-SELECT * FROM coffee
