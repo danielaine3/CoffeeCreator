@@ -5,7 +5,6 @@ $(function() {
 		var newCoffee = {
 			name: $("#co").val().trim()
 		};
-		console.log("made it here.")
 		$.ajax("/api/coffee", {
 			type:"POST",
 			data: newCoffee
