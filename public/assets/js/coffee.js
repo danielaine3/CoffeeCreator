@@ -1,6 +1,17 @@
 $(function() {
 	$(".add-coffee").on("submit", function(event) {
 		event.preventDefault();
+
+		// var coffee_id = $(this).children(".coffee_id").val();
+		// console.log(coffee_id);
+		// $.ajax({
+		// 	method: "PUT", 
+		// 	url:"/coffees/" + coffee_id
+		// }).then(function(data) {
+		// 	location.reload();
+		// });
+
+
 		var newCoffee = {
 			name: $("#co").val().trim()
 		};

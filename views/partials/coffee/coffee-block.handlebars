@@ -1,10 +1,11 @@
 <li>
+	{{!-- List ID number and coffee name --}}
 	{{id}}. {{name}}
-
+	{{!-- Create buttons to drink or refill coffee --}}
 	<button class="drink" data-id="{{id}}" data-newdrank="{{drank}}">
 		{{#if drank}}Drink Coffee!{{else}}REFILL!{{/if}}
 	</button>
-
+	{{!-- Create delete button --}}
 	<button class= "delete-coffee" data-id="{{this.id}}"><i class="far fa-trash-alt"></i>
 
 </button>

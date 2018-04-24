@@ -1,16 +1,21 @@
+{{!-- Title --}}
 <h1>Coffee Creator!</h1>
+{{!-- Subtitle --}}
 <h2> Create a coffee... Then drink It!</h2>
+{{!-- Image div --}}
 <div id="img-holder">
 	<img src="/assets/img/coffee.png">
 	<img src="/assets/img/coffee1.png">
 	<img src="/assets/img/coffee2.png">
 </div>
+{{!-- Add a coffee form --}}
 <form class="add-coffee">
 	<div class= "form-group">
 		<input type="text" id="co" name="name">
 	</div>
 	<button type="submit" id="submit"><i class="fas fa-coffee"></i> Add coffee!</button>
 </form>
+{{!-- Coffees Ready list --}}
 <div class="ready">
 	<h3 id="readytitle">ORDER UP!</h3>
 	<ul>
@@ -21,6 +26,7 @@
 		{{/each}}
 	</ul>
 </div>
+{{!-- Coffees drank list --}}
 <div class="gone">
 	<h3 id="gonetitle">REFILLS!</h3>
 	<ul>
